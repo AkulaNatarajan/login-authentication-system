@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Authentication System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dashboard-box">
+            <div class="dashboard-header">
+                <h1>Welcome to Your Dashboard</h1>
+                <button id="logoutBtn" class="btn btn-danger">Logout</button>
+            </div>
+
+            <div class="dashboard-content">
+                <div class="user-info">
+                    <h2>User Information</h2>
+                    <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+                    <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                    <p><strong>Login Time:</strong> <span id="loginTime"></span></p>
+                </div>
+
+                <div class="session-info">
+                    <h2>Session Details</h2>
+                    <p>✓ You are successfully logged in</p>
+                    <p>✓ Your session is secure and encrypted</p>
+                    <p>✓ This page is only accessible to authenticated users</p>
+                </div>
+
+                <div class="actions">
+                    <h2>Actions</h2>
+                    <button id="refreshBtn" class="btn btn-secondary">Refresh Session</button>
+                    <button id="settingsBtn" class="btn btn-secondary">Settings (Coming Soon)</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
